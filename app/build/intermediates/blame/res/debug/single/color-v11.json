@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]

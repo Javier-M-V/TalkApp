@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout-v11/notification_template_big_media.xml"
     },
@@ -8,8 +12,16 @@
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout-v11/notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout-v11/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
@@ -20,7 +32,19 @@
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout-v11/notification_media_cancel_action.xml"
     },
     {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout-v11/notification_template_big_media.xml"
     }
 ]

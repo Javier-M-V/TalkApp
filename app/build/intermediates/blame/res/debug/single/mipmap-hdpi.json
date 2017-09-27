@@ -6,5 +6,13 @@
     {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/alumno/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/alumno/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]
