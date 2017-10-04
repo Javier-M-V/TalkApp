@@ -48,7 +48,7 @@
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -57,8 +57,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -72,7 +72,7 @@
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -81,8 +81,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -96,7 +96,7 @@
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -105,8 +105,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -120,7 +120,7 @@
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -129,8 +129,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -144,7 +144,7 @@
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -153,8 +153,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -168,7 +168,7 @@
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -177,8 +177,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="TextView" />
         </LinearLayout>
 
