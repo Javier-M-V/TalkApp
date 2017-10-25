@@ -1,11 +1,11 @@
 package com.example.javier.myapplication;
 
-public class cContacto {
+public class ContactoClass {
     String nombre;
     int tel;
     int foto;
 
-    public cContacto(String nombre, int tel, int foto) {
+    public ContactoClass(String nombre, int tel, int foto) {
         this.nombre = nombre;
         this.tel = tel;
         this.foto = foto;
@@ -31,7 +31,7 @@ public class cContacto {
         return foto;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public int setFoto(int foto) {
+        return this.foto = foto;
     }
 }

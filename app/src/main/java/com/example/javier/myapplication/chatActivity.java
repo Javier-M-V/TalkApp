@@ -11,13 +11,13 @@ import java.util.ArrayList;
 
 public class chatActivity extends Activity {
 
-    ArrayList<cMensaje> arraymensajes= null;
+    ArrayList<MensajeClass> arraymensajes= null;
 
 
     //@Override
     protected void onCreate (Bundle savedInstanceState){
         arraymensajes = new ArrayList<>();
-        cMensaje z = new cMensaje("Hola Pepe", 2017, 8, 21, "Andrés", "JavierM");
+        MensajeClass z = new MensajeClass("Hola Pepe", 2017, 8, 21, "Andrés", "JavierM");
         arraymensajes.add(z);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat);
@@ -25,7 +25,7 @@ public class chatActivity extends Activity {
     }
     public void OnClicbutton(View v) {
         EditText edit= findViewById(R.id.editText);
-        cMensaje a = new cMensaje(edit.getText().toString(),2017, 8, 21,"Andrés", "JavierM");
+        MensajeClass a = new MensajeClass(edit.getText().toString(),2017, 8, 21,"Andrés", "JavierM");
         arraymensajes.add(a);
         mostrarmensajes(arraymensajes.size()-1);
 

@@ -38,9 +38,13 @@
     <LinearLayout
         android:id="@+id/layoutchatscontactos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="7"
         android:orientation="vertical">
 
+        <ListView
+            android:id="@+id/listacontactos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </LinearLayout>

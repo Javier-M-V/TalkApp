@@ -236,6 +236,10 @@
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/plantillacontacto.xml",
+        "source": "/home/alumno/AndroidStudioProjects/MyApplication/app/src/main/res/layout/plantillacontacto.xml"
+    },
+    {
         "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout/abc_screen_simple.xml"
     },

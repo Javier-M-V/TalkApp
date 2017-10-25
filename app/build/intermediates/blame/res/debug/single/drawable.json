@@ -52,6 +52,10 @@
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/fotoa.png",
+        "source": "/home/alumno/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/fotoa.png"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/drawable/abc_tab_indicator_material.xml"
     },
