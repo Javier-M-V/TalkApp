@@ -4,6 +4,10 @@
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/mainpage.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/mainpage.xml"
+    },
+    {
         "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout/abc_list_menu_item_layout.xml"
     },
@@ -212,6 +216,10 @@
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/config.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/config.xml"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout/abc_action_mode_bar.xml"
     },
@@ -248,6 +256,10 @@
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/listadechats_plantillacontacto.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/listadechats_plantillacontacto.xml"
+    },
+    {
         "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout/notification_template_icon_group.xml"
     },
@@ -278,6 +290,10 @@
     {
         "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/about.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/about.xml"
     },
     {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
@@ -338,6 +354,14 @@
     {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/chatindividual.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chatindividual.xml"
+    },
+    {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/listadechats.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/listadechats.xml"
     },
     {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",

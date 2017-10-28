@@ -1,4 +1,4 @@
-package com.example.javier.myapplication;
+package com.example.javier.myapplication.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,12 +7,14 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.javier.myapplication.R;
+import com.example.javier.myapplication.classauxiliares.MensajeClass;
+
 import java.util.ArrayList;
 
-public class chatActivity extends Activity {
+public class ChatIndividual extends Activity {
 
     ArrayList<MensajeClass> arraymensajes= null;
-
 
     //@Override
     protected void onCreate (Bundle savedInstanceState){
@@ -20,7 +22,7 @@ public class chatActivity extends Activity {
         MensajeClass z = new MensajeClass("Hola Pepe", 2017, 8, 21, "Andrés", "JavierM");
         arraymensajes.add(z);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chat);
+        setContentView(R.layout.chatindividual);
         mostrarmensajes(0);
     }
     public void OnClicbutton(View v) {
@@ -36,7 +38,7 @@ public class chatActivity extends Activity {
         TextView txtv = null;
         for (int i = indexmensajes; i < arraymensajes.size(); i++) {
             txtv = new TextView(this);
-            txtv.setText(arraymensajes.get(i).mensaje + "\n" + arraymensajes.get(i).fechahora.toString() + "\n" + arraymensajes.get(i).remitente + "\n");
+            txtv.setText(arraymensajes.get(i).getMensaje() + "\n" + arraymensajes.get(i).getHora() + "\n" + arraymensajes.get(i).getRemitente() + "\n");
             lay_smg.addView(txtv);
         }
     }

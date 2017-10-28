@@ -1,7 +1,6 @@
-package com.example.javier.myapplication;
+package com.example.javier.myapplication.activities;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,31 +8,34 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.javier.myapplication.R;
+import com.example.javier.myapplication.classauxiliares.ContactoClass;
+
 import java.util.List;
 
-/**
- * Created by alumno on 25/10/17.
- */
-
-public class miAdaptadorClass extends BaseAdapter{
+public class MiAdaptadorClass extends BaseAdapter{
 
     private Context cont;
     private List<ContactoClass> listacontactos;
 
-    public miAdaptadorClass(Context cont, List<ContactoClass> listacontactos) {
+    public MiAdaptadorClass(Context cont, List<ContactoClass> listacontactos) {
         this.cont = cont;
         this.listacontactos = listacontactos;
     }
-
+    /*TODO: preguntar a paco que con este método de
+    trabajo tendremos que hacer un capazo de adaptadores*/
     public Context getCont() {
+
         return cont;
     }
 
     public void setCont(Context cont) {
+
         this.cont = cont;
     }
 
     public List<ContactoClass> getListacontactos() {
+
         return listacontactos;
     }
 
@@ -43,16 +45,19 @@ public class miAdaptadorClass extends BaseAdapter{
 
     @Override
     public int getCount() {
+
         return listacontactos.size();
     }
 
     @Override
     public Object getItem(int i) {
+
         return listacontactos.get(i);
     }
 
     @Override
     public long getItemId(int i) {
+
         return i;
     }
 
@@ -62,7 +67,7 @@ public class miAdaptadorClass extends BaseAdapter{
         if (convertView == null)
         {
             LayoutInflater inflater=LayoutInflater.from(cont);
-            convertView = inflater.inflate(R.layout.plantillacontacto, null);
+            convertView = inflater.inflate(R.layout.listadechats_plantillacontacto, null);
         }
         ImageView fotocontacto = (ImageView) convertView.findViewById(R.id.imagencontacto);
         TextView tvFecha_pub = (TextView) convertView.findViewById(R.id.textocontacto);

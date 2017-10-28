@@ -1,21 +1,19 @@
-package com.example.javier.myapplication;
+package com.example.javier.myapplication.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.javier.myapplication.R;
+import com.example.javier.myapplication.classauxiliares.ContactoClass;
+
 import java.util.ArrayList;
-import java.util.List;
 
-/**
- * Created by alumno on 25/10/17.
- */
-
-public class ChatsContactosClass extends Activity {
+public class ListaDeChats extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chats);
+        setContentView(R.layout.listadechats);
 
         ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
         ContactoClass a = new ContactoClass("Pepe", 545678765,R.drawable.fotoa);
@@ -27,11 +25,9 @@ public class ChatsContactosClass extends Activity {
         listacontactos.add(c);
         listacontactos.add(d);
 
-
-
         ListView mensajes = (ListView)this.findViewById(R.id.listacontactos);
 
-        miAdaptadorClass adapter= new miAdaptadorClass(this, listacontactos);
+        MiAdaptadorClass adapter= new MiAdaptadorClass(this, listacontactos);
         mensajes.setAdapter(adapter);
 
     }
