@@ -2288,18 +2288,19 @@ containing a value of this type.
         public static final int abc_vector_test=0x7f020052;
         public static final int fotoa=0x7f020053;
         public static final int logo=0x7f020054;
-        public static final int notification_action_background=0x7f020055;
-        public static final int notification_bg=0x7f020056;
-        public static final int notification_bg_low=0x7f020057;
-        public static final int notification_bg_low_normal=0x7f020058;
-        public static final int notification_bg_low_pressed=0x7f020059;
-        public static final int notification_bg_normal=0x7f02005a;
-        public static final int notification_bg_normal_pressed=0x7f02005b;
-        public static final int notification_icon_background=0x7f02005c;
-        public static final int notification_template_icon_bg=0x7f02005f;
-        public static final int notification_template_icon_low_bg=0x7f020060;
-        public static final int notification_tile_bg=0x7f02005d;
-        public static final int notify_panel_notification_icon_bg=0x7f02005e;
+        public static final int logoblack=0x7f020055;
+        public static final int notification_action_background=0x7f020056;
+        public static final int notification_bg=0x7f020057;
+        public static final int notification_bg_low=0x7f020058;
+        public static final int notification_bg_low_normal=0x7f020059;
+        public static final int notification_bg_low_pressed=0x7f02005a;
+        public static final int notification_bg_normal=0x7f02005b;
+        public static final int notification_bg_normal_pressed=0x7f02005c;
+        public static final int notification_icon_background=0x7f02005d;
+        public static final int notification_template_icon_bg=0x7f020060;
+        public static final int notification_template_icon_low_bg=0x7f020061;
+        public static final int notification_tile_bg=0x7f02005e;
+        public static final int notify_panel_notification_icon_bg=0x7f02005f;
     }
     public static final class id {
         public static final int Lay_mensajes=0x7f0b0063;
@@ -2549,7 +2550,8 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f060010;
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
-        public static final int app_name=0x7f060021;
+        public static final int aboutme=0x7f060021;
+        public static final int app_name=0x7f060022;
         public static final int search_menu_title=0x7f060013;
         public static final int status_bar_notification_info_overflow=0x7f060014;
     }

@@ -16,10 +16,10 @@ public class ListaDeChats extends Activity {
         setContentView(R.layout.listadechats);
 
         ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
-        ContactoClass a = new ContactoClass("Pepe", 545678765,R.drawable.fotoa);
-        ContactoClass b = new ContactoClass("Jose", 545678765,R.drawable.fotoa);
-        ContactoClass c = new ContactoClass("Pedro", 545678765,R.drawable.fotoa);
-        ContactoClass d = new ContactoClass("Luisa", 545678765,R.drawable.fotoa);
+        ContactoClass a = new ContactoClass("Pepe","", 545678765,R.drawable.fotoa);
+        ContactoClass b = new ContactoClass("Jose", "",545678765,R.drawable.fotoa);
+        ContactoClass c = new ContactoClass("Pedro", "",545678765,R.drawable.fotoa);
+        ContactoClass d = new ContactoClass("Luisa", "",545678765,R.drawable.fotoa);
         listacontactos.add(a);
         listacontactos.add(b);
         listacontactos.add(c);

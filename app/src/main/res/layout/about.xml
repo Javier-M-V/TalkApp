@@ -8,27 +8,28 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        app:srcCompat="?android:attr/listChoiceIndicatorSingle" />
+        android:layout_weight="3"
+        android:src="@drawable/logoblack"
+        android:contentDescription="logo" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="MiguasapHappy" />
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="8dp"
+        android:text="About Talk!App" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:gravity="center_vertical|center_horizontal"
-        android:paddingBottom="20dp"
+        android:layout_weight="1"
+        android:freezesText="false"
         android:paddingHorizontal="5dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet orci id posuere aliquam. Quisque eget turpis non ipsum vestibulum pulvinar. Maecenas nunc odio, vulputate in pretium eget, lacinia et lorem. Vivamus id tortor nulla. Aliquam euismod laoreet nisl vel gravida. Donec interdum quis arcu vitae commodo. Mauris vitae urna nunc. Nunc eu vulputate lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Sed eu mi diam. Ut accumsan lorem a nisi tempus ornare."
-        android:textAlignment="viewStart" />
+        android:text="@string/aboutme"
+        android:textAlignment="center" />
 </LinearLayout>
