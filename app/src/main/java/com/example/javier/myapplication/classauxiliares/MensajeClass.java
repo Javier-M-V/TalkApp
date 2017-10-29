@@ -28,14 +28,17 @@ public class MensajeClass {
     }
 
     public String getMensaje() {
+
         return mensaje;
     }
 
     public void setMensaje(String mensaje) {
+
         this.mensaje = mensaje;
     }
 
     public String getRemitente() {
+
         return remitente;
     }
 }
