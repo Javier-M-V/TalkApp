@@ -22,8 +22,7 @@ public class MiAdaptadorClass extends BaseAdapter{
         this.cont = cont;
         this.listacontactos = listacontactos;
     }
-    /*TODO: preguntar a paco que con este método de
-    trabajo tendremos que hacer un capazo de adaptadores*/
+
     public Context getCont() {
 
         return cont;
