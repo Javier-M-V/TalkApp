@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.javier.myapplication.R;
+import com.example.javier.myapplication.adapters.AdaptadorContacto;
 import com.example.javier.myapplication.classauxiliares.ContactoClass;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class ListaDeChats extends Activity {
 
         ListView mensajes = (ListView)this.findViewById(R.id.listacontactos);
 
-        MiAdaptadorClass adapter= new MiAdaptadorClass(this, listacontactos);
+        AdaptadorContacto adapter= new AdaptadorContacto(this, listacontactos);
         mensajes.setAdapter(adapter);
 
     }

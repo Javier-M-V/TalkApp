@@ -1,4 +1,4 @@
-package com.example.javier.myapplication.activities;
+package com.example.javier.myapplication.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,12 +13,12 @@ import com.example.javier.myapplication.classauxiliares.ContactoClass;
 
 import java.util.List;
 
-public class MiAdaptadorClass extends BaseAdapter{
+public class AdaptadorContacto extends BaseAdapter{
 
     private Context cont;
     private List<ContactoClass> listacontactos;
 
-    public MiAdaptadorClass(Context cont, List<ContactoClass> listacontactos) {
+    public AdaptadorContacto(Context cont, List<ContactoClass> listacontactos) {
         this.cont = cont;
         this.listacontactos = listacontactos;
     }
