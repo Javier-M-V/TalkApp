@@ -23,10 +23,9 @@ public class ServicioDataBase extends SQLiteOpenHelper {
         if(db != null)
         {
             //Insertamos los datos en la tabla Contactos
-            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis',6653454,"+R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia',6621323,"+R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan',6654321,"+ R.drawable.fotoa+")");
-
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis','hola', 6653454,"+R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',6621323,"+R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',6654321,"+ R.drawable.fotoa+")");
         }
     }
 
