@@ -1,7 +1,7 @@
 package com.example.javier.myapplication.classauxiliares;
 
 import java.util.Date;
-
+//TODO: cambiar DATE a SimpleDateFormat
 public class MensajeClass {
     private String mensaje;
     private Date fechahora;

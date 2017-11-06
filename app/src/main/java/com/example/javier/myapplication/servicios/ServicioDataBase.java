@@ -7,9 +7,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.javier.myapplication.R;
 
 public class ServicioDataBase extends SQLiteOpenHelper {
-
+    //SQLITE.DATE
     //Sentencia SQL para crear la tabla de Contactos
-    String sqlCreate = "CREATE TABLE Contactos (nombre TEXT,estado INT,telefono INTEGER, foto INTEGER)";
+    String sqlCreate = "CREATE TABLE Contactos (nombre TEXT, estado TEXT, telefono INTEGER, foto INTEGER)";
+    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha DATE, remitente TEXT, usuario TEXT)";
 
     public ServicioDataBase(Context contexto, String nombre, SQLiteDatabase.CursorFactory factory, int version)
     {
@@ -26,6 +27,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis','hola', 6653454,"+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',6621323,"+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',6654321,"+ R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('Maldita', ,'Jose','Yo')");
         }
     }
 

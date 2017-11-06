@@ -15,22 +15,22 @@ import java.util.List;
 
 public class AdaptadorContacto extends BaseAdapter{
 
-    private Context cont;
+    private Context contexto;
     private List<ContactoClass> listacontactos;
 
-    public AdaptadorContacto(Context cont, List<ContactoClass> listacontactos) {
-        this.cont = cont;
+    public AdaptadorContacto(Context contextovalor, List<ContactoClass> listacontactos) {
+        this.contexto = contextovalor;
         this.listacontactos = listacontactos;
     }
 
     public Context getCont() {
 
-        return cont;
+        return contexto;
     }
 
-    public void setCont(Context cont) {
+    public void setCont(Context contextovalor) {
 
-        this.cont = cont;
+        this.contexto = contextovalor;
     }
 
     public List<ContactoClass> getListacontactos() {
@@ -65,7 +65,7 @@ public class AdaptadorContacto extends BaseAdapter{
         //Es la primera vez que se va a usar la vista
         if (convertView == null)
         {
-            LayoutInflater inflater=LayoutInflater.from(cont);
+            LayoutInflater inflater=LayoutInflater.from(contexto);
             convertView = inflater.inflate(R.layout.listadechats_plantillacontacto, null);
         }
         ImageView fotocontacto = (ImageView) convertView.findViewById(R.id.imagencontacto);

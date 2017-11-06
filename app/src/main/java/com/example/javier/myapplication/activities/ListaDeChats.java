@@ -24,7 +24,7 @@ public class ListaDeChats extends Activity {
         ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
         if(db != null)
         {
-            Cursor c = db.rawQuery(" SELECT nombre,estado,telefono,foto FROM Contactos ", null);
+            Cursor c = db.rawQuery(" SELECT nombre,estado,telefono,foto FROM Contactos", null);
             String nombre="";
             String estado="";
             int tel=0;
