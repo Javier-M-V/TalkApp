@@ -13,8 +13,11 @@ import com.example.javier.myapplication.R;
 import com.example.javier.myapplication.classauxiliares.ContactoClass;
 import com.example.javier.myapplication.classauxiliares.MensajeClass;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.SimpleTimeZone;
+import java.util.StringTokenizer;
 
 /**
  * Created by alumno on 6/11/17.
@@ -38,21 +41,31 @@ public class AdaptadorMensajes extends BaseAdapter {
         Date fechahora;
         String remitente;
         String usuario;
-        List<MensajeClass> listamensajesaconstruir=new List<MensajeClass>();
+        ArrayList<MensajeClass> listamensajesaconstruir=new ArrayList<MensajeClass>();
         MensajeClass a = null;
         if (cursor.moveToFirst()) {
             //Recorremos el cursor hasta que no haya más registros
             do {
                 mensaje = cursor.getString(0);
-                fechahora =  cursor.;
+                fechahora = toDate(cursor.getString(1));
                 remitente = cursor.getString(2);
                 usuario = cursor.getString(3);
 
-                a = new ContactoClass(mensaje, fechahora, tel, usuario);
+                a = new MensajeClass(mensaje, fechahora, remitente, usuario);
                 listamensajesaconstruir.add(a);
             } while (cursor.moveToNext());
         }
         return listamensajesaconstruir;
+    }
+
+    public Date toDate(String fechastring){
+
+        StringTokenizer str=new StringTokenizer(fechastring,"/");
+        int dia=Integer.parseInt(str.nextToken());
+        int hora=Integer.parseInt(str.nextToken());
+        int año=Integer.parseInt(str.nextToken());
+        Date a= new Date(dia,hora,año);
+        return a;
     }
 
     public Context getContexto(){
@@ -77,7 +90,7 @@ public class AdaptadorMensajes extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View convertView, ViewGroup parent) {
+    public View getView(int i, View convertView, ViewGroup parent) {//TODO: crear el metodo para esta vista
 
         //Es la primera vez que se va a usar la vista
         if (convertView == null)

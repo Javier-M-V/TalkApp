@@ -10,7 +10,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
     //SQLITE.DATE
     //Sentencia SQL para crear la tabla de Contactos
     String sqlCreate = "CREATE TABLE Contactos (nombre TEXT, estado TEXT, telefono INTEGER, foto INTEGER)";
-    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha DATE, remitente TEXT, usuario TEXT)";
+    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha TEXT, remitente TEXT, usuario TEXT)";
 
     public ServicioDataBase(Context contexto, String nombre, SQLiteDatabase.CursorFactory factory, int version)
     {

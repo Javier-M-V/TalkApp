@@ -19,7 +19,7 @@ public class ChatIndividual extends Activity {
     //@Override
     protected void onCreate (Bundle savedInstanceState){
         arraymensajes = new ArrayList<>();
-        MensajeClass z = new MensajeClass("Hola Pepe", 2017, 8, 21, "Andrés", "JavierM");
+        MensajeClass z = new MensajeClass("Hola Pepe", fechahora, "Andrés", "JavierM");
         arraymensajes.add(z);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatindividual);
@@ -27,7 +27,7 @@ public class ChatIndividual extends Activity {
     }
     public void OnClicbutton(View v) {
         EditText edit= findViewById(R.id.editText);
-        MensajeClass a = new MensajeClass(edit.getText().toString(),2017, 8, 21,"Andrés", "JavierM");
+        MensajeClass a = new MensajeClass(edit.getText().toString(), fechahora, "Andrés", "JavierM");
         arraymensajes.add(a);
         mostrarmensajes(arraymensajes.size()-1);
 

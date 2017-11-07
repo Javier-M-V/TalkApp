@@ -1,18 +1,24 @@
 package com.example.javier.myapplication.classauxiliares;
 
 import java.util.Date;
-//TODO: cambiar DATE a SimpleDateFormat
+//TODO: trabajar con SimpleDateFormat
 public class MensajeClass {
     private String mensaje;
     private Date fechahora;
     private String remitente;
     private String usuario;
 
-    public MensajeClass(String mensaje, int ano, int mes, int dia, String remitente, String user){
+    public MensajeClass(String mensaje, Date fechahora, String remitente, String user){
         this.mensaje = mensaje;
-        fechahora = new Date(ano, mes, dia);
+        this.fechahora = new Date();
         this.remitente = remitente;
-        this. usuario= user;
+        this. usuario = user;
+    }
+    public MensajeClass(String mensaje, int dia, int mes, int ano,String remitente, String user){
+        this.mensaje = mensaje;
+        this.fechahora = new Date(dia,mes,ano);
+        this.remitente = remitente;
+        this. usuario = user;
     }
 
     public String getHora() {
