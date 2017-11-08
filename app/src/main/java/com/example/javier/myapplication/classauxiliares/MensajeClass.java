@@ -1,25 +1,33 @@
 package com.example.javier.myapplication.classauxiliares;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-//TODO: trabajar con SimpleDateFormat
+import java.util.Calendar;
+
 public class MensajeClass {
     private String mensaje;
-    private Date fechahora;
+    private String fechahora;
     private String remitente;
     private String usuario;
 
-    public MensajeClass(String mensaje, Date fechahora, String remitente, String user){
+    //normalmente usado para que la fecha sea automática, con el día y la hora del momento, cuando se crea el mensaje
+    public MensajeClass(String mensaje, String remitente, String user){
         this.mensaje = mensaje;
-        this.fechahora = new Date();
+        Date hoy = Calendar.getInstance().getTime();
+        DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        this.fechahora = df.format(hoy);
         this.remitente = remitente;
         this. usuario = user;
     }
-    public MensajeClass(String mensaje, int dia, int mes, int ano,String remitente, String user){
+    //normalmente usado para leer de DDBB
+    public MensajeClass(String mensaje, String fechahora, String remitente, String user){
         this.mensaje = mensaje;
-        this.fechahora = new Date(dia,mes,ano);
+        this.fechahora = fechahora;
         this.remitente = remitente;
         this. usuario = user;
     }
+
 
     public String getHora() {
 

@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.SimpleTimeZone;
 import java.util.StringTokenizer;
+import java.text.SimpleDateFormat;
 
 /**
  * Created by alumno on 6/11/17.
@@ -38,7 +39,7 @@ public class AdaptadorMensajes extends BaseAdapter {
 
     protected List<MensajeClass> constructormensajes() {
         String mensaje;
-        Date fechahora;
+        String fechahora;
         String remitente;
         String usuario;
         ArrayList<MensajeClass> listamensajesaconstruir=new ArrayList<MensajeClass>();
@@ -47,7 +48,7 @@ public class AdaptadorMensajes extends BaseAdapter {
             //Recorremos el cursor hasta que no haya más registros
             do {
                 mensaje = cursor.getString(0);
-                fechahora = toDate(cursor.getString(1));
+                fechahora = cursor.getString(1);
                 remitente = cursor.getString(2);
                 usuario = cursor.getString(3);
 
@@ -58,22 +59,24 @@ public class AdaptadorMensajes extends BaseAdapter {
         return listamensajesaconstruir;
     }
 
-    public Date toDate(String fechastring){
+    /*public String toDate(String fechastring){
 
-        StringTokenizer str=new StringTokenizer(fechastring,"/");
+        StringTokenizer str=new StringTokenizer(fechastring,"/: ");
         int dia=Integer.parseInt(str.nextToken());
         int hora=Integer.parseInt(str.nextToken());
         int año=Integer.parseInt(str.nextToken());
         Date a= new Date(dia,hora,año);
         return a;
-    }
+    }*/
 
     public Context getContexto(){
+
         return contexto;
     }
     
     @Override
     public int getCount() {
+
         return listamensajes.size();
     }
 
@@ -104,4 +107,23 @@ public class AdaptadorMensajes extends BaseAdapter {
         fotocontacto.setBackgroundResource(listacontactos.get(i).getFoto());
         return convertView;
     }
+
+    /*
+    // Create an instance of SimpleDateFormat used for formatting
+    // the string representation of date (month/day/year)
+    DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+
+    // Get the date today using Calendar object.
+    Date today = Calendar.getInstance().getTime();
+    // Using DateFormat format method we can create a string
+    // representation of a date with the defined format.
+    String reportDate = df.format(today);
+
+    // Print what date is today!
+    System.out.println("Report Date: " + reportDate);
+
+    https://stackoverflow.com/questions/5683728/convert-java-util-date-to-string
+
+
+    * */
 }

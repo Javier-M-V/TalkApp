@@ -11,6 +11,8 @@ import com.example.javier.myapplication.R;
 import com.example.javier.myapplication.classauxiliares.MensajeClass;
 
 import java.util.ArrayList;
+import java.util.Date;
+
 
 public class ChatIndividual extends Activity {
 
@@ -19,7 +21,7 @@ public class ChatIndividual extends Activity {
     //@Override
     protected void onCreate (Bundle savedInstanceState){
         arraymensajes = new ArrayList<>();
-        MensajeClass z = new MensajeClass("Hola Pepe", fechahora, "Andrés", "JavierM");
+        MensajeClass z = new MensajeClass("Hola Pepe", "Andrés", "JavierM");
         arraymensajes.add(z);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatindividual);
@@ -27,7 +29,7 @@ public class ChatIndividual extends Activity {
     }
     public void OnClicbutton(View v) {
         EditText edit= findViewById(R.id.editText);
-        MensajeClass a = new MensajeClass(edit.getText().toString(), fechahora, "Andrés", "JavierM");
+        MensajeClass a = new MensajeClass(edit.getText().toString(), "Andrés", "JavierM");
         arraymensajes.add(a);
         mostrarmensajes(arraymensajes.size()-1);
 
