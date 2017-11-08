@@ -9,6 +9,7 @@ import com.example.javier.myapplication.R;
 public class ServicioDataBase extends SQLiteOpenHelper {
     //SQLITE.DATE
     //Sentencia SQL para crear la tabla de Contactos
+    /*ojo con el formato de fecha que ha de entrar de manera auto: "MM/dd/yyyy HH:mm:ss"*/
     String sqlCreate = "CREATE TABLE Contactos (nombre TEXT, estado TEXT, telefono INTEGER, foto INTEGER)";
     String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha TEXT, remitente TEXT, usuario TEXT)";
 
@@ -27,9 +28,9 @@ public class ServicioDataBase extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis','hola', 6653454,"+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',6621323,"+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',6654321,"+ R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('Maldita','Jose','Yo')");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('RATA','pepe','Yo')");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('jajaja','Andrés','Yo')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('Maldita','05/25/2016 20:33:01','Jose','Yo')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('RATA','05/25/2016 20:33:01','pepe','Yo')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('jajaja','05/25/2016 20:33:01',Andrés','Yo')");
 
         }
     }

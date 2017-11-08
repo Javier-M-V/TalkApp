@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class MensajeClass {
     private String mensaje;
@@ -14,7 +15,8 @@ public class MensajeClass {
     //normalmente usado para que la fecha sea automática, con el día y la hora del momento, cuando se crea el mensaje
     public MensajeClass(String mensaje, String remitente, String user){
         this.mensaje = mensaje;
-        Date hoy = Calendar.getInstance().getTime();
+        //Date hoy = Calendar.getInstance(TimeZone.getTimeZone("Europe/Madrid")).getTime();
+        Date hoy = new Date();
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
         this.fechahora = df.format(hoy);
         this.remitente = remitente;
@@ -28,7 +30,9 @@ public class MensajeClass {
         this. usuario = user;
     }
 
-
+    public String getFecha(){
+        return fechahora;
+    }
     public String getHora() {
 
         String hora = fechahora.toString();

@@ -59,16 +59,6 @@ public class AdaptadorMensajes extends BaseAdapter {
         return listamensajesaconstruir;
     }
 
-    /*public String toDate(String fechastring){
-
-        StringTokenizer str=new StringTokenizer(fechastring,"/: ");
-        int dia=Integer.parseInt(str.nextToken());
-        int hora=Integer.parseInt(str.nextToken());
-        int año=Integer.parseInt(str.nextToken());
-        Date a= new Date(dia,hora,año);
-        return a;
-    }*/
-
     public Context getContexto(){
 
         return contexto;
@@ -99,12 +89,13 @@ public class AdaptadorMensajes extends BaseAdapter {
         if (convertView == null)
         {
             LayoutInflater inflater=LayoutInflater.from(contexto);
-            convertView = inflater.inflate(R.layout.listadechats_plantillacontacto, null);
+            convertView = inflater.inflate(R.layout.chatindividual_plantillamensaje, null);
         }
-        ImageView fotocontacto = (ImageView) convertView.findViewById(R.id.imagencontacto);
-        TextView tvFecha_pub = (TextView) convertView.findViewById(R.id.textocontacto);
-        tvFecha_pub.setText(listacontactos.get(i).getNombre());
-        fotocontacto.setBackgroundResource(listacontactos.get(i).getFoto());
+        TextView mensaje = (TextView) convertView.findViewById(R.id.mensaje);
+        mensaje.setText(listamensajes.get(i).getMensaje());
+        //arreglar la fecha
+        TextView fecha = (TextView)convertView.findViewById(R.id.fecha);
+        fecha.setText(listamensajes.get(i).getFecha());
         return convertView;
     }
 

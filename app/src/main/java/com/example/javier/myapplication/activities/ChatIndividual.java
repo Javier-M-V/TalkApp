@@ -13,7 +13,10 @@ import com.example.javier.myapplication.classauxiliares.MensajeClass;
 import java.util.ArrayList;
 import java.util.Date;
 
-
+/*TODO: meter database e implementar el modo en que funcionen los mensajitos
+ServicioDataBase agendaBBDD=new ServicioDataBase(this, "agendaBBDD", null, 1);
+SQLiteDatabase db = agendaBBDD.getWritableDatabase();
+* */
 public class ChatIndividual extends Activity {
 
     ArrayList<MensajeClass> arraymensajes= null;
