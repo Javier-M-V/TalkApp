@@ -22,6 +22,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
     {
         //Se ejecuta la sentencia SQL de creación de la tabla
         db.execSQL(sqlCreate);
+        db.execSQL(sqlCreate2);
         if(db != null)
         {
             //Insertamos los datos en la tabla Contactos
@@ -30,7 +31,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',6654321,"+ R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('Maldita','05/25/2016 20:33:01','Jose','Yo')");
             db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('RATA','05/25/2016 20:33:01','pepe','Yo')");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('jajaja','05/25/2016 20:33:01',Andrés','Yo')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,usuario) VALUES ('jajaja','05/25/2016 20:33:01','Andrés','Yo')");
 
         }
     }
@@ -49,6 +50,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
 
             //Se crea la nueva versión de la tabla
             db.execSQL(sqlCreate);
+            db.execSQL(sqlCreate2);
         }
 
     }

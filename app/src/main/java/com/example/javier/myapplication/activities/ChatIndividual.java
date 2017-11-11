@@ -1,6 +1,7 @@
 package com.example.javier.myapplication.activities;
 
 import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -9,23 +10,27 @@ import android.widget.TextView;
 
 import com.example.javier.myapplication.R;
 import com.example.javier.myapplication.classauxiliares.MensajeClass;
+import com.example.javier.myapplication.servicios.ServicioDataBase;
 
 import java.util.ArrayList;
 import java.util.Date;
 
 /*TODO: meter database e implementar el modo en que funcionen los mensajitos
-ServicioDataBase agendaBBDD=new ServicioDataBase(this, "agendaBBDD", null, 1);
-SQLiteDatabase db = agendaBBDD.getWritableDatabase();
+
 * */
 public class ChatIndividual extends Activity {
 
     ArrayList<MensajeClass> arraymensajes= null;
+    ServicioDataBase  agendaBBDD=null;
+    SQLiteDatabase db=null;
 
-    //@Override
     protected void onCreate (Bundle savedInstanceState){
+        agendaBBDD=new ServicioDataBase(this, "agendaBBDD", null, 1);
+        db= agendaBBDD.getWritableDatabase();
         arraymensajes = new ArrayList<>();
         MensajeClass z = new MensajeClass("Hola Pepe", "Andrés", "JavierM");
         arraymensajes.add(z);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatindividual);
         mostrarmensajes(0);
