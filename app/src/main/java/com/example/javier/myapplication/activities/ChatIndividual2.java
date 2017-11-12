@@ -26,7 +26,7 @@ public class ChatIndividual2 extends AppCompatActivity {
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
         ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
         if (db != null) {
-            Cursor c = db.rawQuery("SELECT mensaje, fecha FROM Mensajes", null);
+            Cursor c = db.rawQuery("SELECT mensaje, fecha ,remitente, usuario FROM Mensajes", null);
             String textomensaje;
             String fechahora;
             String remitente;

@@ -31,7 +31,7 @@ public class ChatIndividual extends Activity {
     protected void onCreate (Bundle savedInstanceState){
         agendaBBDD=new ServicioDataBase(this, "agendaBBDD", null, 1);
         db= agendaBBDD.getWritableDatabase();
-        Cursor a = db.rawQuery("SELECT mensaje , fecha FROM Mensajes", null);
+        Cursor a = db.rawQuery("SELECT mensaje, fecha ,remitente, usuario FROM Mensajes", null);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatindividual);
         ListView mensajes = (ListView)this.findViewById(R.id.Lay_mensajes);
