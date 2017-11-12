@@ -208,6 +208,10 @@
         "source": "/home/alumno/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chatindividual.xml"
     },
     {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/activity_chat_individual2.xml",
+        "source": "/home/javier/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_chat_individual2.xml"
+    },
+    {
         "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
         "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/layout/notification_template_lines_media.xml"
     },

@@ -12,10 +12,17 @@ public class MensajeClass {
     private String remitente;
     private String usuario;
 
+
+    public MensajeClass(String mensaje, String fechahora, String remitente, String user){
+        this.mensaje = mensaje;
+        this.fechahora = fechahora;
+        this.remitente = remitente;
+        this. usuario = user;
+    }
     //normalmente usado para que la fecha sea automática, con el día y la hora del momento, cuando se crea el mensaje
+
     public MensajeClass(String mensaje, String remitente, String user){
         this.mensaje = mensaje;
-        //Date hoy = Calendar.getInstance(TimeZone.getTimeZone("Europe/Madrid")).getTime();
         Date hoy = new Date();
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
         this.fechahora = df.format(hoy);
@@ -23,14 +30,10 @@ public class MensajeClass {
         this. usuario = user;
     }
     //normalmente usado para leer de DDBB
-    public MensajeClass(String mensaje, String fechahora, String remitente, String user){
-        this.mensaje = mensaje;
-        this.fechahora = fechahora;
-        this.remitente = remitente;
-        this. usuario = user;
-    }
+
 
     public String getFecha(){
+
         return fechahora;
     }
     public String getHora() {

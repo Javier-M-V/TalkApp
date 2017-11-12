@@ -45,9 +45,9 @@ public class ListaDeChats extends Activity {
         }
         db.close();
 
-        ListView mensajes = (ListView)this.findViewById(R.id.listacontactos);
+        ListView contactos = (ListView)this.findViewById(R.id.listacontactos);
         AdaptadorContacto adapter= new AdaptadorContacto(this, listacontactos);
-        mensajes.setAdapter(adapter);
+        contactos.setAdapter(adapter);
 
     }
 }

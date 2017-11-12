@@ -29,7 +29,7 @@
             android:text="Nombrecontacto" />
     </LinearLayout>
 
-    <LinearLayout
+    <ListView
 
         android:id="@+id/Lay_mensajes"
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
         android:background="@android:color/background_light"
         android:orientation="vertical">
 
-    </LinearLayout>
+    </ListView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

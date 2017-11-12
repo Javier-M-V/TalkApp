@@ -37,10 +37,10 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/javie
 		ADDED from /home/javier/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:7:9-43
 	android:theme
 		ADDED from /home/javier/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.example.javier.myapplication.activities.ChatIndividual
+activity#com.example.javier.myapplication.activities.ChatIndividual2
 ADDED from /home/javier/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /home/javier/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-60
+		ADDED from /home/javier/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-61
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /home/javier/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
