@@ -92,12 +92,12 @@
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
         "source": "/home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/javier/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/home/javier/.android/build-cache/7ad41f24e410d4311120f294af21690fd230cb11/output/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/home/alumno/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",

@@ -1,9 +1,13 @@
 package com.example.javier.myapplication.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -22,6 +26,8 @@ public class ListaDeChats extends Activity {
         ServicioDataBase agendaBBDD=new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
         ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
+        ListView viewlista = (ListView) findViewById(R.id.listacontactos);
+        viewlista.setOnItemClickListener(btn2Listener);
         if(db != null)
         {
             Cursor c = db.rawQuery(" SELECT nombre,estado,telefono,foto FROM Contactos", null);
@@ -48,6 +54,18 @@ public class ListaDeChats extends Activity {
         ListView contactos = (ListView)this.findViewById(R.id.listacontactos);
         AdaptadorContacto adapter= new AdaptadorContacto(this, listacontactos);
         contactos.setAdapter(adapter);
-
     }
+
+    private AdapterView.OnItemClickListener btn2Listener = new AdapterView.OnItemClickListener()
+    {
+        @Override
+        public void onItemClick (AdapterView<?> parent, View view, int position, long id)
+        {
+            ContactoClass contact = (ContactoClass) parent.getAdapter().getItem(position);
+            String ide = Integer.toString(contact.getTel());
+            Intent intent = new Intent(getApplicationContext(), ChatIndividual.class);//en vez de this usamos getApplication Context
+            intent.putExtra("TEXTO_MENSAJE", ide);
+            startActivity(intent);
+        }
+    };
 }
