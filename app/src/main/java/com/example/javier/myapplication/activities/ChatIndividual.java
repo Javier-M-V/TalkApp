@@ -27,11 +27,11 @@ public class ChatIndividual extends AppCompatActivity {
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
         ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
         if (db != null) {
-            Cursor c = db.rawQuery("SELECT mensaje, fecha ,remitente, usuario FROM Mensajes WHERE telefono="+telefono, null);
+            Cursor c = db.rawQuery("SELECT mensaje, fecha ,remitente, telefono FROM Mensajes WHERE telefono='"+telefono+"'", null);
             String textomensaje;
             String fechahora;
             String remitente;
-            String usuario;
+            String tel;
 
             MensajeClass mensaje = null;
             if (c.moveToFirst()) {
@@ -40,9 +40,9 @@ public class ChatIndividual extends AppCompatActivity {
                     textomensaje = c.getString(0);
                     fechahora = c.getString(1);
                     remitente = c.getString(2);
-                    usuario = c.getString(3);
+                    tel = c.getString(3);
 
-                    mensaje = new MensajeClass(textomensaje,fechahora,remitente,usuario);
+                    mensaje = new MensajeClass(textomensaje,fechahora,remitente,tel);
                     listamensajesaconstruir.add(mensaje);
                 } while (c.moveToNext());
                 c.close();
