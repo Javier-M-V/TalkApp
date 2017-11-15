@@ -7,11 +7,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.javier.myapplication.R;
 
 public class ServicioDataBase extends SQLiteOpenHelper {
-    //SQLITE.DATE
     //Sentencia SQL para crear la tabla de Contactos
     /*ojo con el formato de fecha que ha de entrar de manera auto: "MM/dd/yyyy HH:mm:ss"*/
     String sqlCreate = "CREATE TABLE Contactos (nombre TEXT, estado TEXT, telefono INTEGER, foto INTEGER)";
-    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha TEXT, remitente TEXT, telefono TEXT)";
+    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha TEXT, destinatarioTelefono TEXT, remitenteTelefono TEXT)";
 
     public ServicioDataBase(Context contexto, String nombre, SQLiteDatabase.CursorFactory factory, int version)
     {
@@ -26,12 +25,12 @@ public class ServicioDataBase extends SQLiteOpenHelper {
         if(db != null)
         {
             //Insertamos los datos en la tabla Contactos
-            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis','hola', 6653454,"+R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',6621323,"+R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',6654321,"+ R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,telefono) VALUES ('Maldita','05/25/2016 20:33:01','Jose','6621323')");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,telefono) VALUES ('RATA','05/25/2016 20:33:01','pepe','6621323')");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,remitente,telefono) VALUES ('jajaja','05/25/2016 20:33:01','Andrés','6653454')");
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis','hola', 66534541,"+R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',66213232,"+R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',66543213,"+ R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('Maldita','05/25/2016 20:33:01','722740774','66213232')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('RATA','05/25/2016 20:33:01','722740774','66213232')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('jajaja','05/25/2016 20:33:01','722740774','66534541')");
 
         }
     }

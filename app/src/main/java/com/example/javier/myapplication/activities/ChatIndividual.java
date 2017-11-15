@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -22,12 +23,12 @@ public class ChatIndividual extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatindividual);
         Intent intent = getIntent();
-        String telefono = intent.getStringExtra("TEXTO_MENSAJE");
+        String telefono = intent.getStringExtra("id_telefono");
         ServicioDataBase agendaBBDD = new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
         ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
         if (db != null) {
-            Cursor c = db.rawQuery("SELECT mensaje, fecha ,remitente, telefono FROM Mensajes WHERE telefono='"+telefono+"'", null);
+            Cursor c = db.rawQuery("SELECT mensaje, fecha, destinatarioTelefono, remitenteTelefono FROM Mensajes WHERE remitenteTelefono='"+telefono+"'", null);
             String textomensaje;
             String fechahora;
             String remitente;
@@ -56,7 +57,7 @@ public class ChatIndividual extends AppCompatActivity {
 
     public void OnClicbutton(View v) {
         /*EditText edit= findViewById(R.id.editText);
-        MensajeClass a = new MensajeClass(edit.getText().toString(), "Andrés", "JavierM");
+        MensajeClass a = new MensajeClass(edit.getText().toString(), "tel1", "tel2");
         arraymensajes.add(a);
         mostrarmensajes(arraymensajes.size()-1);*/
 
