@@ -64,7 +64,7 @@ public class ListaDeChats extends Activity {
             ContactoClass contact = (ContactoClass) parent.getAdapter().getItem(position);
             String ide = Integer.toString(contact.getTel());
             Intent intent = new Intent(getApplicationContext(), ChatIndividual.class);//en vez de this usamos getApplication Context
-            intent.putExtra("TEXTO_MENSAJE", ide);
+            intent.putExtra("id_telefono", ide);
             startActivity(intent);
         }
     };
