@@ -1,4 +1,4 @@
-package com.example.javier.myapplication.activities;
+package com.example.javier.myapplication.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,25 +13,24 @@ import com.example.javier.myapplication.classauxiliares.ContactoClass;
 
 import java.util.List;
 
-public class MiAdaptadorClass extends BaseAdapter{
+public class AdaptadorContacto extends BaseAdapter{
 
-    private Context cont;
+    private Context contexto;
     private List<ContactoClass> listacontactos;
 
-    public MiAdaptadorClass(Context cont, List<ContactoClass> listacontactos) {
-        this.cont = cont;
+    public AdaptadorContacto(Context contextovalor, List<ContactoClass> listacontactos) {
+        this.contexto = contextovalor;
         this.listacontactos = listacontactos;
     }
-    /*TODO: preguntar a paco que con este método de
-    trabajo tendremos que hacer un capazo de adaptadores*/
+
     public Context getCont() {
 
-        return cont;
+        return contexto;
     }
 
-    public void setCont(Context cont) {
+    public void setCont(Context contextovalor) {
 
-        this.cont = cont;
+        this.contexto = contextovalor;
     }
 
     public List<ContactoClass> getListacontactos() {
@@ -66,7 +65,7 @@ public class MiAdaptadorClass extends BaseAdapter{
         //Es la primera vez que se va a usar la vista
         if (convertView == null)
         {
-            LayoutInflater inflater=LayoutInflater.from(cont);
+            LayoutInflater inflater=LayoutInflater.from(contexto);
             convertView = inflater.inflate(R.layout.listadechats_plantillacontacto, null);
         }
         ImageView fotocontacto = (ImageView) convertView.findViewById(R.id.imagencontacto);
