@@ -10,7 +10,6 @@ public class MensajeClass {
     private String destinatarioTelefono;
     private String remitenteTelefono;
 
-
     public MensajeClass(String mensaje, String fechahora,
                         String ValordestinatarioTelefono, String ValorremitenteTelefono){
 
@@ -33,7 +32,6 @@ public class MensajeClass {
     }
     //normalmente usado para leer de DDBB
 
-
     public String getFecha(){
 
         return fechahora;
@@ -44,13 +42,13 @@ public class MensajeClass {
         return mensaje;
     }
 
-
     public String getRemitenteTelefono() {
 
         return remitenteTelefono;
     }
 
     public String getDestinatarioTelefono() {
+
         return destinatarioTelefono;
     }
 }

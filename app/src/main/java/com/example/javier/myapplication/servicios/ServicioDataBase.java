@@ -3,7 +3,6 @@ package com.example.javier.myapplication.servicios;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import com.example.javier.myapplication.R;
 
 public class ServicioDataBase extends SQLiteOpenHelper {
@@ -24,6 +23,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
         if(db != null)
         {
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Luis','hola', 66534541,"+R.drawable.fotoa+")");
+            db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('YO','PROGRAMADOR',"+R.string.mitelefono+","+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',66213232,"+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',66543213,"+ R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('Hola','05/25/2016 20:33:01','722740774','66213232')");
@@ -36,15 +36,8 @@ public class ServicioDataBase extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldversion, int newversion) {
 
         {
-            //NOTA: Por simplicidad del ejemplo aquí utilizamos directamente la opción de
-            //      eliminar la tabla anterior y crearla de nuevo vacía con el nuevo formato.
-            //      Sin embargo lo normal será que haya que migrar datos de la tabla antigua
-            //      a la nueva, por lo que este método debería ser más elaborado.
-
-            //Se elimina la versión anterior de la tabla
             db.execSQL("DROP TABLE IF EXISTS Contactos");
-
-            //Se crea la nueva versión de la tabla
+            //Nueva versión de la tabla
             db.execSQL(sqlCreate);
             db.execSQL(sqlCreate2);
         }

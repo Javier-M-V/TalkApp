@@ -22,6 +22,7 @@ public class ChatIndividual extends Activity {
 
     private String telefono  = null;
     private ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
