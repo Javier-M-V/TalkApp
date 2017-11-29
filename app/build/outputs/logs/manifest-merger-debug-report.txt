@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/Android
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:5:5-22:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.android/build-cache/520774f812e8985f653e7f620da561740e7d12ed/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/8b994f1d904f80f4cc5c70f2f89fe8a8d06df197/output/AndroidManifest.xml:29:5-20
@@ -38,23 +38,27 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumn
 	android:theme
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.javier.myapplication.activities.ListaDeChats
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:9-17:20
 	android:name
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
 ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:15:27-74
 activity#com.example.javier.myapplication.activities.ChatIndividual
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:19:9-20:20
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:18:9-19:20
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:19:19-60
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:18:19-60
+activity#com.example.javier.myapplication.activities.MainActivity
+ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:9-21:20
+	android:name
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:19-58
 uses-sdk
 INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:21:5-23:78

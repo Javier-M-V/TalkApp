@@ -14,14 +14,18 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="@color/materialgrey"
+            android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/mensaje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:layout_weight="3" />
+            android:layout_weight="3"
+            android:background="@color/materialgrey"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </LinearLayout>
