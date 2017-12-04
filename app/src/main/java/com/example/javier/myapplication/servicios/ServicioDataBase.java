@@ -9,7 +9,7 @@ public class ServicioDataBase extends SQLiteOpenHelper {
 
     /*ojo con el formato de fecha que ha de entrar de manera auto: "MM/dd/yyyy HH:mm:ss"*/
     String sqlCreate = "CREATE TABLE Contactos (nombre TEXT, estado TEXT, telefono INTEGER, foto INTEGER)";
-    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha TEXT, destinatarioTelefono TEXT, remitenteTelefono TEXT)";
+    String sqlCreate2 = "CREATE TABLE Mensajes (mensaje TEXT, fecha DATE, destinatarioTelefono TEXT, remitenteTelefono TEXT)";
 
     public ServicioDataBase(Context contexto, String nombre, SQLiteDatabase.CursorFactory factory, int version)
     {
