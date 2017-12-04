@@ -2353,6 +2353,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0b0030;
         public static final int expanded_menu=0x7f0b0045;
         public static final int fecha=0x7f0b0066;
+        public static final int fotouser=0x7f0b0061;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b0016;
         public static final int icon=0x7f0b0034;
@@ -2365,7 +2366,6 @@ containing a value of this type.
         public static final int imageView02=0x7f0b0077;
         public static final int imageView2=0x7f0b005e;
         public static final int imageView3=0x7f0b0072;
-        public static final int imageView5=0x7f0b0061;
         public static final int imagencontacto=0x7f0b007d;
         public static final int info=0x7f0b008e;
         public static final int layoutchatscontactos=0x7f0b0079;

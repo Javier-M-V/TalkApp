@@ -618,6 +618,7 @@ int id end_padder 0x7f0b0097
 int id expand_activities_button 0x7f0b0030
 int id expanded_menu 0x7f0b0045
 int id fecha 0x7f0b0066
+int id fotouser 0x7f0b0061
 int id home 0x7f0b0004
 int id homeAsUp 0x7f0b0016
 int id icon 0x7f0b0034
@@ -630,7 +631,6 @@ int id imageView01 0x7f0b0078
 int id imageView02 0x7f0b0077
 int id imageView2 0x7f0b005e
 int id imageView3 0x7f0b0072
-int id imageView5 0x7f0b0061
 int id imagencontacto 0x7f0b007d
 int id info 0x7f0b008e
 int id layoutchatscontactos 0x7f0b0079

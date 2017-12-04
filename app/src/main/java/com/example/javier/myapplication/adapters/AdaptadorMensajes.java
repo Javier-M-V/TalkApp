@@ -2,6 +2,8 @@ package com.example.javier.myapplication.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +11,9 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.javier.myapplication.R;
+import com.example.javier.myapplication.activities.ChatIndividual;
 import com.example.javier.myapplication.classauxiliares.MensajeClass;
+import com.example.javier.myapplication.servicios.ServicioDataBase;
 
 import java.util.ArrayList;
 
@@ -49,9 +53,22 @@ public class AdaptadorMensajes extends BaseAdapter{
 
         return i;
     }
+    public void anyadirmensaje(MensajeClass mensajeanyadir){
+
+        ServicioDataBase agendaBBDD = new ServicioDataBase(contexto, "agendaBBDD", null, 1);
+        SQLiteDatabase db = agendaBBDD.getWritableDatabase();
+        String sql = "INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('"+mensajeanyadir.getMensaje()+"','"+new java.util.Date().toString()+"','"+mensajeanyadir.getDestinatarioTelefono()+"','"+mensajeanyadir.getRemitenteTelefono()+"')";
+        Log.e("KKKKKK",sql);
+        db.execSQL(sql);
+        db.close();
+        Log.e("KKKKKK", Integer.toString(listamensajes.size()));
+        listamensajes.add(mensajeanyadir);
+        Log.e("KKKKKK", Integer.toString(listamensajes.size()));
+        //
+    }
 
     @Override
-    public View getView(int i, View convertView, ViewGroup parent) {//TODO: crear el metodo para esta vista
+    public View getView(int i, View convertView, ViewGroup parent) {
 
         if (convertView == null)
         {
