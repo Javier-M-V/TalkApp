@@ -26,9 +26,11 @@ public class ServicioDataBase extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('YO','PROGRAMADOR',"+R.string.mitelefono+","+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Julia','hola',66213232,"+R.drawable.fotoa+")");
             db.execSQL("INSERT INTO Contactos (nombre, estado,telefono,foto) VALUES ('Juan','hola',66543213,"+ R.drawable.fotoa+")");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('Hola','05/25/2016 20:33:01','722740774','66213232')");
-            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('K ASE?','05/25/2016 20:33:01','722740774','66213232')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('Hola','05/25/2016 20:33:01','722740774','66534541')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('K ASE?','05/25/2016 20:33:01','66534541','722740774')");
             db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('jajaja','05/25/2016 20:33:01','722740774','66534541')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('JIJIJI','05/25/2016 20:33:01','66534541','722740774')");
+            db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('JEJEJE','05/25/2016 20:33:01','722740774','66534541')");
         }
     }
 

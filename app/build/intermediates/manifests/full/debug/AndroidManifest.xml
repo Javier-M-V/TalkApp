@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.javier.myapplication.activities.ListaDeChats" > <!-- Esta es la pantalla donde se inicia por defecto -->
+        <activity android:name="com.example.javier.myapplication.activities.MainActivity" > <!-- Esta es la pantalla donde se inicia por defecto -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +30,7 @@
         </activity>
         <activity android:name="com.example.javier.myapplication.activities.ChatIndividual" >
         </activity>
-        <activity android:name="com.example.javier.myapplication.activities.MainActivity" >
+        <activity android:name="com.example.javier.myapplication.activities.ListaDeChats" >
         </activity>
     </application>
 

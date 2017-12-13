@@ -65,7 +65,7 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gra
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.example.javier.myapplication.activities.ListaDeChats
+activity#com.example.javier.myapplication.activities.MainActivity
 ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:9-17:20
 	android:name
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-58
@@ -83,7 +83,7 @@ activity#com.example.javier.myapplication.activities.ChatIndividual
 ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:18:9-19:20
 	android:name
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:18:19-60
-activity#com.example.javier.myapplication.activities.MainActivity
+activity#com.example.javier.myapplication.activities.ListaDeChats
 ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:9-21:20
 	android:name
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:19-58

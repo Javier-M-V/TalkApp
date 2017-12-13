@@ -30,7 +30,7 @@ public class ListaDeChats extends Activity {
         viewlista.setOnItemClickListener(btn2Listener);
         if(db != null)
         {
-            Cursor c = db.rawQuery("SELECT nombre,estado,telefono,foto FROM Contactos", null);
+            Cursor c = db.rawQuery("SELECT nombre,estado,telefono,foto FROM Contactos WHERE nombre <> 'YO'", null);
             String nombre="";
             String estado="";
             int tel=0;

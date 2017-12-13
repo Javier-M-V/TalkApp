@@ -39,13 +39,6 @@ public class ChatIndividual extends Activity {
 
     public void OnClicbutton(View v) {
         EditText edit= (EditText) findViewById(R.id.editText);
-
-        /*tring sql = "INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('"+edit.getText().toString()+"','"+new java.util.Date().toString()+"','"+telefono+"','722740774')";
-        Log.e("KKKKKK",sql);
-        db.execSQL("INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('"+edit.getText().toString()+"','"+new java.util.Date().toString()+"','"+telefono+"','722740774')");
-
-        mostrarmensajes();
-        db.close();*/
         MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),new java.util.Date().toString(),telefono,"722740774");
         AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
         adapter.anyadirmensaje(mensajenuevo);
@@ -83,34 +76,5 @@ public class ChatIndividual extends Activity {
         db.close();
     }
 
-    protected void mostrarultimo() {
-        ArrayList<MensajeClass> ultimomensaje = new ArrayList<MensajeClass>();
-        ServicioDataBase agendaBBDD = new ServicioDataBase(this, "agendaBBDD", null, 1);
-        SQLiteDatabase db = agendaBBDD.getWritableDatabase();
-        if (db != null) {
-            Cursor c = db.rawQuery("SELECT mensaje, fecha, destinatarioTelefono, remitenteTelefono FROM Mensajes WHERE remitenteTelefono='"+telefono+"' AND destinatarioTelefono = '722740774' OR destinatarioTelefono = '"+telefono+"' AND remitenteTelefono='722740774'", null);
-            String textomensaje;
-            String fechahora;
-            String remitente;
-            String tel;
-
-            MensajeClass mensaje = null;
-            if (c.moveToLast()) {
-                    textomensaje = c.getString(0);
-                    fechahora = c.getString(1);
-                    remitente = c.getString(2);
-                    tel = c.getString(3);
-
-                    mensaje = new MensajeClass(textomensaje,fechahora,remitente,tel);
-                ultimomensaje.add(mensaje);
-                c.close();
-
-                ListView mensajitos = (ListView) this.findViewById(R.id.Lay_mensajes);
-                AdaptadorMensajes adapter = new AdaptadorMensajes(this, ultimomensaje);
-                mensajitos.setAdapter(adapter);
-            }
-        }
-        db.close();
-    }
 }
 
