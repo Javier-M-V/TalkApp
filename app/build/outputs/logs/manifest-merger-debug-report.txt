@@ -1,40 +1,68 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 application
 ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:5:5-22:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.android/build-cache/520774f812e8985f653e7f620da561740e7d12ed/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/8b994f1d904f80f4cc5c70f2f89fe8a8d06df197/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.android/build-cache/cc34223b6940fba6e3f8421a1c0ee4d19f954c12/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.android/build-cache/ce14019febfbb97dd6a166edd0c940c1692e68aa/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.android/build-cache/e0c45a3ee09bc20e5c9183383e4f3f51037c778e/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.android/build-cache/32ef11952a4100dd51316824f3d0f96a5eb0697b/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.android/build-cache/4fd289098b7a310888d9b588bf9cffcfc18db61b/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/c6b7e2d85532157c0a30de7031f21900be36abdc/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.android/build-cache/00ae3402f0a695fee1e4fc6bd9f8a62c976b1c4f/output/AndroidManifest.xml:9:5-20
-	android:label
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:8:9-41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:9:9-54
-	android:allowBackup
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.javier.myapplication.activities.ListaDeChats
@@ -61,35 +89,59 @@ ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/Android
 		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:19-58
 uses-sdk
 INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.android/build-cache/520774f812e8985f653e7f620da561740e7d12ed/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/8b994f1d904f80f4cc5c70f2f89fe8a8d06df197/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.android/build-cache/cc34223b6940fba6e3f8421a1c0ee4d19f954c12/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.android/build-cache/ce14019febfbb97dd6a166edd0c940c1692e68aa/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.android/build-cache/e0c45a3ee09bc20e5c9183383e4f3f51037c778e/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.android/build-cache/32ef11952a4100dd51316824f3d0f96a5eb0697b/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.android/build-cache/4fd289098b7a310888d9b588bf9cffcfc18db61b/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/c6b7e2d85532157c0a30de7031f21900be36abdc/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.android/build-cache/00ae3402f0a695fee1e4fc6bd9f8a62c976b1c4f/output/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.android/build-cache/520774f812e8985f653e7f620da561740e7d12ed/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/8b994f1d904f80f4cc5c70f2f89fe8a8d06df197/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.android/build-cache/cc34223b6940fba6e3f8421a1c0ee4d19f954c12/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.android/build-cache/ce14019febfbb97dd6a166edd0c940c1692e68aa/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.android/build-cache/e0c45a3ee09bc20e5c9183383e4f3f51037c778e/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.android/build-cache/32ef11952a4100dd51316824f3d0f96a5eb0697b/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.android/build-cache/4fd289098b7a310888d9b588bf9cffcfc18db61b/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.android/build-cache/c6b7e2d85532157c0a30de7031f21900be36abdc/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/980a80e0536253e95db09d5d9e542e21/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/2246988063e695081a642b6ca1dfb9b4/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/d4df651dd1ff2260da870e159e257935/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ddea3e79d5f4b1764d97c9d4d63aaeda/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.android/build-cache/f678e8725bb3515f17a11ee4b79118e294918623/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:26:9-47
