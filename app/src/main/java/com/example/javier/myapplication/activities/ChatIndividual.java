@@ -30,10 +30,14 @@ public class ChatIndividual extends Activity {
         setContentView(R.layout.chatindividual);
         Intent intent = getIntent();
         telefono = intent.getStringExtra("id_telefono");
-        //ImageView fotocontacto = get
         ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
         ServicioDataBase agendaBBDD = new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
+        Cursor a = db.rawQuery("SELECT foto FROM Contactos WHERE telefono="+telefono, null);
+        a.moveToFirst();
+        int foto = a.getInt(0);
+        ImageView view = (ImageView) findViewById(R.id.imageViewFotocontacto);
+        view.setImageResource(foto);
         mostrarmensajes();
     }
 
