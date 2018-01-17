@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.javier.myapplication.R;
 import com.example.javier.myapplication.adapters.AdaptadorMensajes;
@@ -33,11 +34,13 @@ public class ChatIndividual extends Activity {
         ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
         ServicioDataBase agendaBBDD = new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
-        Cursor a = db.rawQuery("SELECT foto FROM Contactos WHERE telefono="+telefono, null);
+        Cursor a = db.rawQuery("SELECT foto, nombre FROM Contactos WHERE telefono="+telefono, null);
         a.moveToFirst();
         int foto = a.getInt(0);
         ImageView view = (ImageView) findViewById(R.id.imageViewFotocontacto);
         view.setImageResource(foto);
+        TextView nombrecontacto = (TextView)findViewById(R.id.NombrecontactoChatIndividual);
+        nombrecontacto.setText(a.getString(1));
         mostrarmensajes();
     }
 

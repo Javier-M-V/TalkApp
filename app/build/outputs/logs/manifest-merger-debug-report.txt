@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:17:1-28:12
@@ -14,25 +14,25 @@ MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/alumno/.g
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/756ab287668409f6a6bf0e6354e52cac/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:17:1-31:12
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:3:5-47
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-24:12
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:5:5-22:19
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:5:5-22:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:9:5-20
@@ -54,43 +54,43 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gr
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.javier.myapplication.activities.MainActivity
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:9-17:20
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:12:9-17:20
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-58
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:12:19-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:13:13-16:29
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:15:17-77
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:15:27-74
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:15:27-74
 activity#com.example.javier.myapplication.activities.ChatIndividual
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:18:9-19:20
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:18:9-19:20
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:18:19-60
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:18:19-60
 activity#com.example.javier.myapplication.activities.ListaDeChats
-ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:9-21:20
+ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:20:9-21:20
 	android:name
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:20:19-58
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml:20:19-58
 uses-sdk
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/alumno/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/c0e41db39d6aebec8d784b5f26578429/AndroidManifest.xml:5:5-7:41
@@ -111,18 +111,18 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gr
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/96c79365ab64b23b6f89d4a10ca7b5a1/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/aa25ebe42aa82c2a4aa1b19145a0e22c/AndroidManifest.xml:21:5-23:58
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		ADDED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alumno/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alumno/AndroidStudioProjects/TalkApp/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/b92a71f9faa455e6e24ca70d2276af4d/AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/alumno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/20e8a93568a47858d0b0d631eff00a95/AndroidManifest.xml:22:5-24:41

@@ -81,12 +81,12 @@ public class AdaptadorMensajes extends BaseAdapter{
         TextView fecha = (TextView)convertView.findViewById(R.id.fecha);
         fecha.setText(listamensajes.get(i).getFecha());
         if((listamensajes.get(i).getRemitenteTelefono()).equals("722740774")){
-            fecha.setGravity(Gravity.LEFT);
+            fecha.setGravity(Gravity.CENTER);
             mensaje.setGravity(Gravity.LEFT);
         }
         else{
 
-            fecha.setGravity(Gravity.RIGHT);
+            fecha.setGravity(Gravity.CENTER);
             mensaje.setGravity(Gravity.RIGHT);
         }
         return convertView;
