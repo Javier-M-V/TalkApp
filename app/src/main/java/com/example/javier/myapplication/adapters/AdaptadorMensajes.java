@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.javier.myapplication.R;
@@ -65,7 +66,10 @@ public class AdaptadorMensajes extends BaseAdapter{
                 +"','"+mensajeanyadir.getRemitenteTelefono()+"')";
         db.execSQL(sql);
         db.close();
+        Log.e("ANTES",Integer.toString(listamensajes.size()));
         listamensajes.add(mensajeanyadir);
+        Log.e("DESPUES",Integer.toString(listamensajes.size()));
+        notifyDataSetChanged();
     }
 
     @Override
@@ -81,14 +85,18 @@ public class AdaptadorMensajes extends BaseAdapter{
         TextView fecha = (TextView)convertView.findViewById(R.id.fecha);
         fecha.setText(listamensajes.get(i).getFecha());
         if((listamensajes.get(i).getRemitenteTelefono()).equals("722740774")){
-            fecha.setGravity(Gravity.CENTER);
-            mensaje.setGravity(Gravity.LEFT);
-        }
-        else{
 
-            fecha.setGravity(Gravity.CENTER);
+
+            fecha.setGravity(Gravity.RIGHT);
             mensaje.setGravity(Gravity.RIGHT);
+            LinearLayout.LayoutParams  lllp=(LinearLayout.LayoutParams)fecha.getLayoutParams();
+            lllp.gravity=Gravity.RIGHT;
+            fecha.setLayoutParams(lllp);
+            LinearLayout.LayoutParams  lllpp=(LinearLayout.LayoutParams)mensaje.getLayoutParams();
+            lllpp.gravity=Gravity.RIGHT;
+            mensaje.setLayoutParams(lllpp);
         }
+
         return convertView;
     }
 }

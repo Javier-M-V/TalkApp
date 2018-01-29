@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -49,7 +50,7 @@ public class ChatIndividual extends Activity {
         MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),new java.util.Date().toString(),telefono,"722740774");
         AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
         adapter.anyadirmensaje(mensajenuevo);
-        adapter.notifyDataSetChanged();
+
     }
 
     protected void mostrarmensajes() {
@@ -76,6 +77,9 @@ public class ChatIndividual extends Activity {
                 c.close();
 
                 ListView mensajitos = (ListView) this.findViewById(R.id.Lay_mensajes);
+                if(remitente.equals("722740774")){
+
+                }
                 AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
                 mensajitos.setAdapter(adapter);
             }
