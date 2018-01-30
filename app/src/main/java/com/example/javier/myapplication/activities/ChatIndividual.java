@@ -25,6 +25,7 @@ public class ChatIndividual extends Activity {
 
     private String telefono  = null;
     private ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
+    AdaptadorMensajes adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class ChatIndividual extends Activity {
     public void OnClicbutton(View v) {
         EditText edit= (EditText) findViewById(R.id.editText);
         MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),new java.util.Date().toString(),telefono,"722740774");
-        AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
+        //AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
         adapter.anyadirmensaje(mensajenuevo);
 
     }
@@ -76,15 +77,17 @@ public class ChatIndividual extends Activity {
                 } while (c.moveToNext());
                 c.close();
 
-                ListView mensajitos = (ListView) this.findViewById(R.id.Lay_mensajes);
+
                 if(remitente.equals("722740774")){
 
                 }
-                AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
-                mensajitos.setAdapter(adapter);
+
             }
         }
         db.close();
+        ListView mensajitos = (ListView) this.findViewById(R.id.Lay_mensajes);
+        adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
+        mensajitos.setAdapter(adapter);
     }
 
 }
