@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -49,9 +46,8 @@ public class ChatIndividual extends Activity {
     public void OnClicbutton(View v) {
         EditText edit= (EditText) findViewById(R.id.editText);
         MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),new java.util.Date().toString(),telefono,"722740774");
-        //AdaptadorMensajes adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
         adapter.anyadirmensaje(mensajenuevo);
-
+        edit.setText("");
     }
 
     protected void mostrarmensajes() {
@@ -76,12 +72,6 @@ public class ChatIndividual extends Activity {
                     listamensajesaconstruir.add(mensaje);
                 } while (c.moveToNext());
                 c.close();
-
-
-                if(remitente.equals("722740774")){
-
-                }
-
             }
         }
         db.close();
@@ -89,6 +79,5 @@ public class ChatIndividual extends Activity {
         adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
         mensajitos.setAdapter(adapter);
     }
-
 }
 
