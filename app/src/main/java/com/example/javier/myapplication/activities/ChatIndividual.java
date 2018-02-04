@@ -26,14 +26,18 @@ public class ChatIndividual extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatindividual);
         Intent intent = getIntent();
-        telefono = intent.getStringExtra("id_telefono");
+        telefono = intent.getStringExtra("id_telefono");//guardamos el teléfono para rescatar todos los datos
         ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
         ServicioDataBase agendaBBDD = new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
-        Cursor a = db.rawQuery("SELECT foto, nombre FROM Contactos WHERE telefono="+telefono, null);
+
+        Cursor a = db.rawQuery("SELECT foto, nombre " +
+                "FROM Contactos " +
+                "WHERE telefono="+telefono, null);
         a.moveToFirst();
         int foto = a.getInt(0);
         ImageView view = (ImageView) findViewById(R.id.imageViewFotocontacto);
@@ -43,22 +47,32 @@ public class ChatIndividual extends Activity {
         mostrarmensajes();
     }
 
+    //enviar mensaje
     public void OnClicbutton(View v) {
+        
         EditText edit= (EditText) findViewById(R.id.editText);
-        MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),new java.util.Date().toString(),telefono,"722740774");
+        MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),
+                new java.util.Date().toString(),
+                telefono,
+                "722740774");
         adapter.anyadirmensaje(mensajenuevo);
         edit.setText("");
     }
 
+    //carga de mensajes
     protected void mostrarmensajes() {
+
+        String textomensaje;
+        String fechahora;
+        String remitente;
+        String tel;
         ServicioDataBase agendaBBDD = new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
         if (db != null) {
-            Cursor c = db.rawQuery("SELECT mensaje, fecha, destinatarioTelefono, remitenteTelefono FROM Mensajes WHERE remitenteTelefono='"+telefono+"' AND destinatarioTelefono = '722740774' OR destinatarioTelefono = '"+telefono+"' AND remitenteTelefono='722740774' ORDER BY fecha", null);
-            String textomensaje;
-            String fechahora;
-            String remitente;
-            String tel;
+            Cursor c = db.rawQuery("SELECT mensaje, fecha, destinatarioTelefono, remitenteTelefono FROM Mensajes " +
+                    "WHERE remitenteTelefono='"+telefono+"' " +
+                    "AND destinatarioTelefono = '722740774' OR destinatarioTelefono = '"+telefono+"' " +
+                    "AND remitenteTelefono='722740774' ORDER BY fecha", null);
 
             MensajeClass mensaje = null;
             if (c.moveToFirst()) {

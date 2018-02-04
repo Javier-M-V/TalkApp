@@ -1,9 +1,7 @@
 package com.example.javier.myapplication.adapters;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import com.example.javier.myapplication.R;
-import com.example.javier.myapplication.activities.ChatIndividual;
 import com.example.javier.myapplication.classauxiliares.MensajeClass;
 import com.example.javier.myapplication.servicios.ServicioDataBase;
 
@@ -29,9 +25,9 @@ public class AdaptadorMensajes extends BaseAdapter{
     private ArrayList<MensajeClass> listamensajes;
 
     public AdaptadorMensajes(Context cont, ArrayList <MensajeClass> array) {
+
         this.contexto = cont;
         this.listamensajes = array;
-
     }
     public Context getContexto(){
 
@@ -59,7 +55,8 @@ public class AdaptadorMensajes extends BaseAdapter{
 
         ServicioDataBase agendaBBDD = new ServicioDataBase(contexto, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
-        String sql = "INSERT INTO Mensajes (mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('"
+        String sql = "INSERT INTO Mensajes " +
+                "(mensaje, fecha,destinatarioTelefono,remitenteTelefono) VALUES ('"
                 +mensajeanyadir.getMensaje()
                 +"','"+new java.util.Date().toString()
                 +"','"+mensajeanyadir.getDestinatarioTelefono()
@@ -84,7 +81,6 @@ public class AdaptadorMensajes extends BaseAdapter{
         fecha.setText(listamensajes.get(i).getFecha());
         if((listamensajes.get(i).getRemitenteTelefono()).equals("722740774")){
 
-
             fecha.setGravity(Gravity.RIGHT);
             mensaje.setGravity(Gravity.RIGHT);
             LinearLayout.LayoutParams  lllp=(LinearLayout.LayoutParams)fecha.getLayoutParams();
@@ -94,7 +90,6 @@ public class AdaptadorMensajes extends BaseAdapter{
             lllpp.gravity=Gravity.RIGHT;
             mensaje.setLayoutParams(lllpp);
         }
-
         return convertView;
     }
 }
