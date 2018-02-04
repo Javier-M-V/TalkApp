@@ -36,8 +36,8 @@ public class ListaDeChats extends Activity {
         ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
         ListView viewlista = (ListView) findViewById(R.id.listacontactos);
         viewlista.setOnItemClickListener(btn2Listener);
-        if(db != null)
-        {
+        if(db != null) {
+
             Cursor c = db.rawQuery("SELECT nombre,estado,telefono,foto FROM Contactos WHERE nombre <> 'YO'", null);
             ContactoClass a=null;
             if (c.moveToFirst()) {
@@ -46,18 +46,20 @@ public class ListaDeChats extends Activity {
                     estado = c.getString(1);
                     tel = c.getInt(2);
                     foto = c.getInt(3);
-                    String sql = "SELECT mensaje FROM Mensajes WHERE remitenteTelefono='"+tel+"' " +
+                    //Último mensaje
+                    String sql = "SELECT mensaje, fecha FROM Mensajes WHERE remitenteTelefono='"+tel+"' " +
                             "AND destinatarioTelefono ='722740774' OR destinatarioTelefono ='"+tel+"' " +
                             "AND remitenteTelefono='722740774' ORDER BY fecha";
                     Cursor ultimo = db.rawQuery(sql, null);
                     if(ultimo.moveToFirst()){
+
                         ultimoMensaje = ultimo.getString(0);
                     }
                     else{
 
                         ultimoMensaje = "No hay mensajes en este chat";
                     }
-                    a = new ContactoClass(nombre, estado, tel, foto,ultimoMensaje);
+                    a = new ContactoClass(nombre, estado, tel, foto, ultimoMensaje);
                     listacontactos.add(a);
                 } while (c.moveToNext());
             }
@@ -68,11 +70,11 @@ public class ListaDeChats extends Activity {
         contactos.setAdapter(adapter);
     }
 
-    private AdapterView.OnItemClickListener btn2Listener = new AdapterView.OnItemClickListener()
-    {
+    //Clic al chat individual
+    private AdapterView.OnItemClickListener btn2Listener = new AdapterView.OnItemClickListener() {
         @Override
-        public void onItemClick (AdapterView<?> parent, View view, int position, long id)
-        {
+        public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+
             ContactoClass contact = (ContactoClass) parent.getAdapter().getItem(position);
             String ide = Integer.toString(contact.getTel());
             Intent intent = new Intent(getApplicationContext(), ChatIndividual.class);
