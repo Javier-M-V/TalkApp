@@ -5,12 +5,14 @@ public class ContactoClass {
     String estado;
     int tel;
     int foto;
+    String ultimoMensaje;
 
-    public ContactoClass(String nombre, String estado, int tel, int foto) {
+    public ContactoClass(String nombre, String estado, int tel, int foto, String ultimoMensaje) {
         this.nombre = nombre;
         this.tel = tel;
         this.foto = foto;
-        this.estado=estado;
+        this.estado = estado;
+        this.ultimoMensaje = ultimoMensaje;
     }
 
     public String getEstado() {
@@ -24,6 +26,10 @@ public class ContactoClass {
     public String getNombre() {
 
         return nombre;
+    }
+    public String getUltimoMensaje(){
+
+        return ultimoMensaje;
     }
 
     public void setNombre(String nombre) {

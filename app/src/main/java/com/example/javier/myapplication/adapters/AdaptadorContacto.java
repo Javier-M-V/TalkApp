@@ -70,6 +70,8 @@ public class AdaptadorContacto extends BaseAdapter{
         }
         ImageView fotocontacto = (ImageView) convertView.findViewById(R.id.imagencontacto);
         TextView tvFecha_pub = (TextView) convertView.findViewById(R.id.textocontacto);
+        TextView textultimomensaje = (TextView) convertView.findViewById(R.id.ultimomensaje);
+        textultimomensaje.setText(listacontactos.get(i).getUltimoMensaje());
         tvFecha_pub.setText(listacontactos.get(i).getNombre());
         fotocontacto.setBackgroundResource(listacontactos.get(i).getFoto());
         return convertView;

@@ -66,9 +66,7 @@ public class AdaptadorMensajes extends BaseAdapter{
                 +"','"+mensajeanyadir.getRemitenteTelefono()+"')";
         db.execSQL(sql);
         db.close();
-        Log.e("ANTES",Integer.toString(listamensajes.size()));
         listamensajes.add(mensajeanyadir);
-        Log.e("DESPUES",Integer.toString(listamensajes.size()));
         notifyDataSetChanged();
     }
 
