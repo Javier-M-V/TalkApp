@@ -49,7 +49,7 @@ public class ListaDeChats extends Activity {
                     //Último mensaje
                     String sql = "SELECT mensaje, fecha FROM Mensajes WHERE remitenteTelefono='"+tel+"' " +
                             "AND destinatarioTelefono ='722740774' OR destinatarioTelefono ='"+tel+"' " +
-                            "AND remitenteTelefono='722740774' ORDER BY fecha";
+                            "AND remitenteTelefono='722740774' ORDER BY fecha DESC";
                     Cursor ultimo = db.rawQuery(sql, null);
                     if(ultimo.moveToFirst()){
 

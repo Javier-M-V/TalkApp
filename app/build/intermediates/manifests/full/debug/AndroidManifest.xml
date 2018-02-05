@@ -28,10 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.javier.myapplication.activities.ChatIndividual" >
-        </activity>
-        <activity android:name="com.example.javier.myapplication.activities.ListaDeChats" >
-        </activity>
+        <activity android:name="com.example.javier.myapplication.activities.ChatIndividual" />
+        <activity android:name="com.example.javier.myapplication.activities.ListaDeChats" />
+        <activity android:name="com.example.javier.myapplication.activities.AboutActivity" />
     </application>
 
 </manifest>

@@ -45,7 +45,7 @@
             android:text="TalkApp! by JMV"
             android:textColor="@android:color/background_light"
             android:textSize="12sp"
-            tools:text="textintro">
+            android:onClick="toAbout">
 
         </TextView>
     </LinearLayout>

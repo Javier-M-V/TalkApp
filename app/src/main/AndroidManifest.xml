@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity"><!--Esta es la pantalla donde se inicia por defecto-->
+        <activity android:name=".activities.MainActivity"> <!-- Esta es la pantalla donde se inicia por defecto -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ChatIndividual">
-        </activity>
-        <activity android:name=".activities.ListaDeChats">
-        </activity>
+        <activity android:name=".activities.ChatIndividual"></activity>
+        <activity android:name=".activities.ListaDeChats"></activity>
+        <activity android:name=".activities.AboutActivity"></activity>
     </application>
 
 </manifest>

@@ -16,6 +16,12 @@ public class MainActivity extends Activity {
         setContentView(R.layout.mainpage);
     }
 
+
+    public void toAbout(View v){
+        Intent about = new Intent(getApplicationContext(), AboutActivity.class);
+        startActivity(about);
+
+    }
     public void OnClicbuttonTalk(View v){
 
         Intent listachats = new Intent(getApplicationContext(), ListaDeChats.class);
