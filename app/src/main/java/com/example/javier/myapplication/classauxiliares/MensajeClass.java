@@ -5,24 +5,22 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MensajeClass {
+
     private String mensaje;
     private String fechahora;
     private String destinatarioTelefono;
     private String remitenteTelefono;
 
-    public MensajeClass(String mensaje, String fechahora,
-                        String ValordestinatarioTelefono, String ValorremitenteTelefono){
+    public MensajeClass(String mensaje, String fechahora, String ValordestinatarioTelefono, String ValorremitenteTelefono){
 
         this.mensaje = mensaje;
         this.fechahora = fechahora;
         this.destinatarioTelefono = ValordestinatarioTelefono;
         this.remitenteTelefono = ValorremitenteTelefono;
     }
-    /*normalmente usado para que la fecha sea automática,
-    con el día y la hora del momento, cuando se crea el mensaje*/
 
-    public MensajeClass(String mensaje, String ValordestinatarioTelefono,
-                        String ValorremitenteTelefono){
+    public MensajeClass(String mensaje, String ValordestinatarioTelefono, String ValorremitenteTelefono){
+
         this.mensaje = mensaje;
         Date hoy = new Date();
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -30,7 +28,6 @@ public class MensajeClass {
         this.destinatarioTelefono = ValordestinatarioTelefono;
         this.remitenteTelefono = ValorremitenteTelefono;
     }
-    //normalmente usado para leer de DDBB
 
     public String getFecha(){
 

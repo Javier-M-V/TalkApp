@@ -62,7 +62,7 @@ public class AdaptadorContacto extends BaseAdapter{
 
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
-        //Es la primera vez que se va a usar la vista
+        String mensajes[];
         if (convertView == null)
         {
             LayoutInflater inflater=LayoutInflater.from(contexto);
@@ -70,8 +70,11 @@ public class AdaptadorContacto extends BaseAdapter{
         }
         ImageView fotocontacto = (ImageView) convertView.findViewById(R.id.imagencontacto);
         TextView tvFecha_pub = (TextView) convertView.findViewById(R.id.textocontacto);
-        TextView textultimomensaje = (TextView) convertView.findViewById(R.id.ultimomensaje);
-        textultimomensaje.setText(listacontactos.get(i).getUltimoMensaje());
+        TextView ultimomensaje = (TextView) convertView.findViewById(R.id.ultimomensaje);
+        TextView fechaultimomentaje = (TextView) convertView.findViewById(R.id.fechaultimomensaje);
+        mensajes = listacontactos.get(i).getUltimoMensaje();
+        ultimomensaje.setText(mensajes[0]);
+        fechaultimomentaje.setText(mensajes[1]);
         tvFecha_pub.setText(listacontactos.get(i).getNombre());
         fotocontacto.setBackgroundResource(listacontactos.get(i).getFoto());
         return convertView;

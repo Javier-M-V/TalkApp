@@ -5,9 +5,9 @@ public class ContactoClass {
     String estado;
     int tel;
     int foto;
-    String ultimoMensaje;
+    String ultimoMensaje [] = new String[2];
 
-    public ContactoClass(String nombre, String estado, int tel, int foto, String ultimoMensaje) {
+    public ContactoClass(String nombre, String estado, int tel, int foto, String [] ultimoMensaje) {
         this.nombre = nombre;
         this.tel = tel;
         this.foto = foto;
@@ -27,7 +27,7 @@ public class ContactoClass {
 
         return nombre;
     }
-    public String getUltimoMensaje(){
+    public String [] getUltimoMensaje(){
 
         return ultimoMensaje;
     }
