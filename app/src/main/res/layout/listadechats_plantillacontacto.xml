@@ -42,7 +42,7 @@
             >
 
             <TextView
-                android:id="@+id/fechaultimomensaje"
+                android:id="@+id/ultimomensaje"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
@@ -50,17 +50,19 @@
                 android:maxWidth="50dp"
                 android:text="TextView"
                 android:textColor="@android:color/background_light"
-                android:visibility="invisible" />
+                android:textSize="14sp"
+                android:visibility="visible" />
 
             <TextView
-                android:id="@+id/ultimomensaje"
+                android:id="@+id/fechaultimomensaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="bottom|right"
-                android:text="TextView"
                 android:maxWidth="50dp"
-                android:textColor="@android:color/background_light"/>
+                android:text="TextView"
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp" />
         </LinearLayout>
     </LinearLayout>
 

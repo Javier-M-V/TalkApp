@@ -25,7 +25,6 @@ public class ListaDeChats extends Activity {
 
         String nombre = "";
         String estado = "";
-        String ultimoMensaje = "";
         int tel = 0;
         int foto = 0;
 
@@ -46,18 +45,20 @@ public class ListaDeChats extends Activity {
                     estado = c.getString(1);
                     tel = c.getInt(2);
                     foto = c.getInt(3);
-                    //Último mensaje
+                    String ultimoMensaje [] = new String[2];
                     String sql = "SELECT mensaje, fecha FROM Mensajes WHERE remitenteTelefono='"+tel+"' " +
                             "AND destinatarioTelefono ='722740774' OR destinatarioTelefono ='"+tel+"' " +
                             "AND remitenteTelefono='722740774' ORDER BY fecha DESC";
                     Cursor ultimo = db.rawQuery(sql, null);
                     if(ultimo.moveToFirst()){
 
-                        ultimoMensaje = ultimo.getString(0);
+                        ultimoMensaje[0] = ultimo.getString(0);
+                        ultimoMensaje[1] = ultimo.getString(1);
                     }
                     else{
 
-                        ultimoMensaje = "No hay mensajes en este chat";
+                        ultimoMensaje[0] = "No hay mensajes en este chat";
+                        ultimoMensaje[1] = "";
                     }
                     a = new ContactoClass(nombre, estado, tel, foto, ultimoMensaje);
                     listacontactos.add(a);

@@ -62,6 +62,7 @@ public class ChatIndividual extends Activity {
     //carga de mensajes
     protected void mostrarmensajes() {
 
+        MensajeClass mensaje = null;
         String textomensaje;
         String fechahora;
         String remitente;
@@ -74,7 +75,7 @@ public class ChatIndividual extends Activity {
                     "AND destinatarioTelefono = '722740774' OR destinatarioTelefono = '"+telefono+"' " +
                     "AND remitenteTelefono='722740774' ORDER BY fecha", null);
 
-            MensajeClass mensaje = null;
+
             if (c.moveToFirst()) {
                 do {
                     textomensaje = c.getString(0);
