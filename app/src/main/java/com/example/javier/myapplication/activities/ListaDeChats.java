@@ -21,24 +21,25 @@ import java.util.ArrayList;
 
 public class ListaDeChats extends Activity {
 
+    ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
     protected void onCreate(Bundle savedInstanceState) {
 
-        String nombre = "";
-        String estado = "";
-        int tel = 0;
-        int foto = 0;
+        String nombre;
+        String estado;
+        int tel;
+        int foto;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listadechats);
         ServicioDataBase agendaBBDD=new ServicioDataBase(this, "agendaBBDD", null, 1);
         SQLiteDatabase db = agendaBBDD.getWritableDatabase();
-        ArrayList<ContactoClass> listacontactos=new ArrayList<ContactoClass>();
+
         ListView viewlista = (ListView) findViewById(R.id.listacontactos);
         viewlista.setOnItemClickListener(btn2Listener);
         if(db != null) {
 
             Cursor c = db.rawQuery("SELECT nombre,estado,telefono,foto FROM Contactos WHERE nombre <> 'YO'", null);
-            ContactoClass a=null;
+            ContactoClass a;
             if (c.moveToFirst()) {
                 do {
                     nombre = c.getString(0);

@@ -22,7 +22,10 @@ public class AdaptadorContacto extends BaseAdapter{
         this.contexto = contextovalor;
         this.listacontactos = listacontactos;
     }
+    public void Refresco(){
 
+        this.notifyDataSetChanged();
+    }
     public Context getCont() {
 
         return contexto;
