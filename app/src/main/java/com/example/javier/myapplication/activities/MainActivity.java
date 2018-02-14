@@ -16,9 +16,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.mainpage);
     }
 
-
-    public void toAbout(View v){
-        Intent about = new Intent(getApplicationContext(), AboutActivity.class);
+    public void toAbout (View v){
+        Intent about = new Intent(this, AboutActivity.class);
         startActivity(about);
 
     }
@@ -26,7 +25,6 @@ public class MainActivity extends Activity {
 
         Intent listachats = new Intent(getApplicationContext(), ListaDeChats.class);
         startActivity(listachats);
-
     }
 }
 

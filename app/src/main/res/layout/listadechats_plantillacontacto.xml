@@ -60,6 +60,7 @@
                 android:layout_weight="1"
                 android:gravity="bottom|right"
                 android:maxWidth="50dp"
+                android:paddingTop="2dp"
                 android:text="TextView"
                 android:textColor="@android:color/background_light"
                 android:textSize="10sp" />

@@ -45,6 +45,7 @@ public class ChatIndividual extends Activity {
         TextView nombrecontacto = (TextView)findViewById(R.id.NombrecontactoChatIndividual);
         nombrecontacto.setText(a.getString(1));
         mostrarmensajes();
+        scrollAbajo();
     }
 
     //enviar mensaje
@@ -57,6 +58,7 @@ public class ChatIndividual extends Activity {
                 "722740774");
         adapter.anyadirmensaje(mensajenuevo);
         edit.setText("");
+        scrollAbajo();
     }
 
     //carga de mensajes
@@ -75,7 +77,6 @@ public class ChatIndividual extends Activity {
                     "AND destinatarioTelefono = '722740774' OR destinatarioTelefono = '"+telefono+"' " +
                     "AND remitenteTelefono='722740774' ORDER BY fecha", null);
 
-
             if (c.moveToFirst()) {
                 do {
                     textomensaje = c.getString(0);
@@ -93,6 +94,19 @@ public class ChatIndividual extends Activity {
         ListView mensajitos = (ListView) this.findViewById(R.id.Lay_mensajes);
         adapter = new AdaptadorMensajes(this, listamensajesaconstruir);
         mensajitos.setAdapter(adapter);
+        ListView lista = findViewById(R.id.Lay_mensajes);
+        lista.scrollTo(0, lista.SCROLL_INDICATOR_BOTTOM);
     }
+
+    public void scrollAbajo() {
+        final ListView mensajitos = (ListView) this.findViewById(R.id.Lay_mensajes);
+        mensajitos.post(new Runnable() {
+            @Override
+            public void run() {
+                mensajitos.setSelection(adapter.getCount() - 1);
+            }
+        });
+    }
+
 }
 
