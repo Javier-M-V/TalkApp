@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
             android:onClick="OnClicbutton"
-            android:text="send"
+            android:text="@string/botonsend"
             android:textColor="@android:color/background_light" />
 
         <EditText

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Talk!</string>
+    <string name="aboutme">Talk! Por Javier Moreno Vilaplana\n<a href="https://github.com/Javier-M-V">
+        Visit our github repository!</a>Talk!App es una práctica de Android Studio bajo licencia
+        <a href="https://opensource.org/licenses/mit-license.php">MIT license</a></string>
+    <string name="mitelefono">722740774</string>
+    <string name= "botonsend">enviar</string>
+</resources>

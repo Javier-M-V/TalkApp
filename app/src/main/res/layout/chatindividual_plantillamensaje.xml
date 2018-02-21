@@ -12,9 +12,10 @@
         android:layout_height="0dp"
         android:layout_gravity="bottom"
         android:layout_weight="3"
+        android:paddingBottom="2dp"
         android:background="@color/materialgrey"
         android:textColor="@android:color/white"
-        android:textSize="11sp" />
+        android:textSize="12dp" />
 
     <TextView
         android:id="@+id/mensaje"
@@ -24,6 +25,6 @@
         android:layout_weight="4"
         android:background="@color/materialgrey"
         android:textColor="@android:color/white"
-        android:textSize="14sp" />
+        android:textSize="15dp" />
 
 </LinearLayout>

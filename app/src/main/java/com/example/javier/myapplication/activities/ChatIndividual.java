@@ -23,6 +23,7 @@ public class ChatIndividual extends Activity {
     private String telefono  = null;
     private ArrayList<MensajeClass> listamensajesaconstruir = new ArrayList<MensajeClass>();
     AdaptadorMensajes adapter;
+    java.text.SimpleDateFormat sm = new java.text.SimpleDateFormat("mm-dd-yyyy");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +51,12 @@ public class ChatIndividual extends Activity {
 
     //enviar mensaje
     public void OnClicbutton(View v) {
-        
+        java.util.Date ahora = new java.util.Date();
+        java.text.SimpleDateFormat sm = new java.text.SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String fechaformateada = sm.format(ahora);
         EditText edit= (EditText) findViewById(R.id.editText);
         MensajeClass mensajenuevo = new MensajeClass(edit.getText().toString(),
-                new java.util.Date().toString(),
+                fechaformateada,
                 telefono,
                 "722740774");
         adapter.anyadirmensaje(mensajenuevo);
